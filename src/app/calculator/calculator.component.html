@@ -1,0 +1,194 @@
+<main class="main">
+  <header class="main__header">
+    <h1>Angular Calculator</h1>
+  </header>
+  <section class="main__section">
+    <div class="calculator">
+      <input
+        type="text"
+        class="calculator__screen"
+        [value]="currentNumber"
+        disabled
+      />
+
+      <mat-grid-list cols="4" rowHeight="100px">
+        <mat-grid-tile colspan="1" rowspan="1">
+          <button
+            class="btn"
+            mat-fab
+            type="button"
+            (click)="getNumber('7')"
+            value="7"
+          >
+            7
+          </button>
+        </mat-grid-tile>
+        <mat-grid-tile colspan="1" rowspan="1">
+          <button
+            class="btn"
+            mat-fab
+            type="button"
+            (click)="getNumber('8')"
+            value="8"
+          >
+            8
+          </button>
+        </mat-grid-tile>
+        <mat-grid-tile colspan="1" rowspan="1">
+          <button
+            class="btn"
+            mat-fab
+            type="button"
+            (click)="getNumber('9')"
+            value="9"
+          >
+            9
+          </button>
+        </mat-grid-tile>
+        <mat-grid-tile colspan="1" rowspan="1">
+          <button
+            mat-fab
+            type="button"
+            (click)="getOperation('/')"
+            class="calculator__operator"
+            value="/"
+          >
+            &divide;
+          </button>
+        </mat-grid-tile>
+        <mat-grid-tile colspan="1" rowspan="1">
+          <button
+            class="btn"
+            mat-fab
+            type="button"
+            (click)="getNumber('4')"
+            value="4"
+          >
+            4
+          </button>
+        </mat-grid-tile>
+        <mat-grid-tile colspan="1" rowspan="1">
+          <button
+            class="btn"
+            mat-fab
+            type="button"
+            (click)="getNumber('5')"
+            value="5"
+          >
+            5
+          </button>
+        </mat-grid-tile>
+        <mat-grid-tile colspan="1" rowspan="1">
+          <button
+            class="btn"
+            mat-fab
+            type="button"
+            (click)="getNumber('6')"
+            value="6"
+          >
+            6
+          </button>
+        </mat-grid-tile>
+        <mat-grid-tile colspan="1" rowspan="1">
+          <button
+            mat-fab
+            type="button"
+            (click)="getOperation('*')"
+            class="calculator__operator"
+            value="*"
+          >
+            &times;
+          </button>
+        </mat-grid-tile>
+        <mat-grid-tile colspan="1" rowspan="1">
+          <button
+            class="btn"
+            mat-fab
+            type="button"
+            (click)="getNumber('1')"
+            value="1"
+          >
+            1
+          </button>
+        </mat-grid-tile>
+        <mat-grid-tile colspan="1" rowspan="1">
+          <button
+            class="btn"
+            mat-fab
+            type="button"
+            (click)="getNumber('2')"
+            value="2"
+          >
+            2
+          </button>
+        </mat-grid-tile>
+        <mat-grid-tile colspan="1" rowspan="1">
+          <button
+            class="btn"
+            mat-fab
+            type="button"
+            (click)="getNumber('3')"
+            value="3"
+          >
+            3
+          </button>
+        </mat-grid-tile>
+        <mat-grid-tile colspan="1" rowspan="1">
+          <button
+            mat-fab
+            type="button"
+            (click)="getOperation('-')"
+            class="calculator__operator"
+            value="-"
+          >
+            -
+          </button>
+        </mat-grid-tile>
+        <mat-grid-tile colspan="1" rowspan="1">
+          <button
+            class="btn"
+            mat-fab
+            type="button"
+            (click)="getNumber('0')"
+            value="0"
+          >
+            0
+          </button>
+        </mat-grid-tile>
+        <mat-grid-tile colspan="1" rowspan="1">
+          <button
+            mat-fab
+            type="button"
+            (click)="clear()"
+            class="all-clear btn"
+            value="all-clear"
+          >
+            AC
+          </button>
+        </mat-grid-tile>
+        <mat-grid-tile colspan="1" rowspan="1">
+          <button
+            mat-fab
+            type="button"
+            (click)="getOperation('=')"
+            class="calculator__operator"
+            value="="
+          >
+            =
+          </button>
+        </mat-grid-tile>
+        <mat-grid-tile colspan="1" rowspan="1">
+          <button
+            mat-fab
+            type="button"
+            (click)="getOperation('+')"
+            class="calculator__operator"
+            value="+"
+          >
+            +
+          </button>
+        </mat-grid-tile>
+      </mat-grid-list>
+    </div>
+  </section>
+</main>

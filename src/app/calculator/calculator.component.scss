@@ -1,0 +1,80 @@
+@import "../../styles/colors";
+
+.main {
+  background-color: $color-background;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.main__header {
+  color: #7fbcd2;
+}
+
+.main__section {
+  width: 400px;
+  background-color: $color-calculator;
+  border-radius: 12px;
+  box-shadow: 10px 10px 25px 8px $color-background;
+  padding: 1rem;
+}
+
+.calculator__operator {
+  width: 80px;
+  height: 80px;
+  font-size: 2rem;
+  color: $color-calculator-letter;
+  background-color: $btn-operation;
+}
+
+.btn {
+  width: 80px;
+  height: 80px;
+  background-color: $btn-number;
+  font-size: 2rem;
+  color: $color-calculator-letter;
+}
+
+.calculator__screen {
+  width: 100%;
+  font-size: 5rem;
+  height: 80px;
+  border: none;
+  background-color: $color-background;
+  color: $color-calculator-letter;
+  text-align: right;
+  padding: 0;
+  border-radius: 5px;
+}
+
+button:hover {
+  background-color: $btn-hover;
+}
+
+.all-clear {
+  background-color: $btn-clear;
+  color: $color-calculator-letter;
+}
+
+.all-clear:hover {
+  background-color: $btn-clear-hover;
+}
+
+.equal-sign {
+  background-color: $btn-equal;
+  color: $color-calculator-letter;
+  height: 100%;
+  border-radius: 20px;
+  grid-area: 2 / 4 / 6 / 5;
+}
+
+.calculator-keys {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 20px;
+  padding: 20px;
+  
+}
